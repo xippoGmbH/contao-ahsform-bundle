@@ -33,8 +33,8 @@ class AhsFormDataListener extends Backend
 			)));
     }
 
-    public function ahsForm($arrPost, $arrForm, $arrFiles, LoggerInterface $logger)
+    public function ahsForm($arrPost, $arrForm, $arrFiles)
     {
-        $logger->info('I just got the logger');
+        LoggerInterface $logger->info('I just got the logger');
     }
 }
