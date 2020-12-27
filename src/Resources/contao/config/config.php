@@ -19,4 +19,4 @@
 // Front end modules
 $GLOBALS['FE_MOD']['miscellaneous']['ahsform'] = 'xippogmbh\ContaoAhsFormBundle\FrontendModule\AhsFormFrontendModule';
 
-$GLOBALS['TL_HOOKS']['processFormData'] = array('xippogmbh\ContaoAhsFormBundle\EventListener\AhsFormDataListener', 'ahsForm');
+$GLOBALS['TL_HOOKS']['processFormData'][] = array('XippoGmbH\ContaoAhsFormBundle\EventListener\AhsFormDataListener', 'ahsForm');
