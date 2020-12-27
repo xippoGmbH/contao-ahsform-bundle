@@ -34,10 +34,7 @@ class AhsFormDataListener extends Backend
 
     public function ahsForm($arrPost, $arrForm, $arrFiles)
     {
-        \System::getContainer()
-			->get('monolog.logger.contao')
-			->log(LogLevel::INFO, 'Ein Log-Eintrag 2', array(
-			'contao' => new ContaoContext(__CLASS__.'::'.__FUNCTION__, TL_GENERAL
-			)));
+        $logger = new LoggerInterface();
+        $logger->info('I just got the logger');
     }
 }
