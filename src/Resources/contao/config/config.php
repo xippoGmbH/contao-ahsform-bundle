@@ -17,4 +17,4 @@
 //$GLOBALS['TL_MODELS']['tl_xippo_maps'] = \XippoGmbH\MapsBundle\Model\MapsModel::class;
 
 // Front end modules
-$GLOBALS['FE_MOD']['miscellaneous']['xippoGmbH'] = 'xippogmbh\ContaoAhsFormBundle\FrontendModule\AhsFormFrontendModule';
+$GLOBALS['FE_MOD']['miscellaneous']['ahsform'] = 'xippogmbh\ContaoAhsFormBundle\FrontendModule\AhsFormFrontendModule';
