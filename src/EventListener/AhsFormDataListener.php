@@ -13,8 +13,6 @@
 namespace XippoGmbH\ContaoAhsFormBundle\EventListener;
 
 use Contao\CoreBundle\ServiceAnnotation\Hook;
-use Psr\Log\LogLevel;
-use Psr\Log\LoggerInterface;
 use Contao\CoreBundle\Monolog\ContaoContext;
 use Contao\Backend;
 use Contao\Form;
@@ -26,15 +24,10 @@ class AhsFormDataListener extends Backend
 {
     public function __invoke(array $submittedData, array $formData, ?array $files, array $labels, Form $form): void
     {
-        \System::getContainer()
-			->get('monolog.logger.contao')
-			->log(LogLevel::INFO, 'Ein Log-Eintrag', array(
-			'contao' => new ContaoContext(__CLASS__.'::'.__FUNCTION__, TL_GENERAL
-			)));
     }
 
     public function ahsForm($arrPost, $arrForm, $arrFiles)
     {
-        LoggerInterface $logger->info('I just got the logger');
+        \System::log('The e-mail was sent successfully', __METHOD__, TL_GENERAL);
     }
 }
