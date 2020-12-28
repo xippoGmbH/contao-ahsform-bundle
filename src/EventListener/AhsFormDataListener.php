@@ -24,10 +24,11 @@ class AhsFormDataListener extends Backend
 {
     public function __invoke(array $submittedData, array $formData, ?array $files, array $labels, Form $form): void
     {
+        \System::log('Das ist die __invoke Methode!', __METHOD__, TL_GENERAL);
     }
 
     public function ahsForm($arrPost, $arrForm, $arrFiles)
     {
-        \System::log('The e-mail was sent successfully', __METHOD__, TL_GENERAL);
+        \System::log('Das ist die ahsForm Methode!', __METHOD__, TL_GENERAL);
     }
 }
