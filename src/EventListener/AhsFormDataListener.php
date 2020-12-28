@@ -29,6 +29,7 @@ class AhsFormDataListener extends Backend
 
     public function ahsForm($arrPost, $arrForm, $arrFiles)
     {
-        \System::log('Das ist die ahsForm Methode!', __METHOD__, TL_GENERAL);
+        \System::log($arrPost, __METHOD__, TL_GENERAL);
+        \System::log($arrForm, __METHOD__, TL_GENERAL);
     }
 }
